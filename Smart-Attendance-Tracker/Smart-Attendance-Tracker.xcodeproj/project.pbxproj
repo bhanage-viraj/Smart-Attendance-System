@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		147A07762D63B25900F2B620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147A075D2D63B25700F2B620 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147A07642D63B25700F2B620;
+			remoteInfo = "Smart-Attendance-Tracker";
+		};
+		147A07802D63B25900F2B620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147A075D2D63B25700F2B620 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147A07642D63B25700F2B620;
+			remoteInfo = "Smart-Attendance-Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		147A07652D63B25700F2B620 /* Smart-Attendance-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-Attendance-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		147A07752D63B25900F2B620 /* Smart-Attendance-TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart-Attendance-TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		147A077F2D63B25900F2B620 /* Smart-Attendance-TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart-Attendance-TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		147A07672D63B25700F2B620 /* Smart-Attendance-Tracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Smart-Attendance-Tracker";
+			sourceTree = "<group>";
+		};
+		147A07782D63B25900F2B620 /* Smart-Attendance-TrackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Smart-Attendance-TrackerTests";
+			sourceTree = "<group>";
+		};
+		147A07822D63B25900F2B620 /* Smart-Attendance-TrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Smart-Attendance-TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147A07622D63B25700F2B620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147A07722D63B25900F2B620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147A077C2D63B25900F2B620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147A075C2D63B25700F2B620 = {
+			isa = PBXGroup;
+			children = (
+				147A07672D63B25700F2B620 /* Smart-Attendance-Tracker */,
+				147A07782D63B25900F2B620 /* Smart-Attendance-TrackerTests */,
+				147A07822D63B25900F2B620 /* Smart-Attendance-TrackerUITests */,
+				147A07662D63B25700F2B620 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		147A07662D63B25700F2B620 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147A07652D63B25700F2B620 /* Smart-Attendance-Tracker.app */,
+				147A07752D63B25900F2B620 /* Smart-Attendance-TrackerTests.xctest */,
+				147A077F2D63B25900F2B620 /* Smart-Attendance-TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		147A07642D63B25700F2B620 /* Smart-Attendance-Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147A07892D63B25900F2B620 /* Build configuration list for PBXNativeTarget "Smart-Attendance-Tracker" */;
+			buildPhases = (
+				147A07612D63B25700F2B620 /* Sources */,
+				147A07622D63B25700F2B620 /* Frameworks */,
+				147A07632D63B25700F2B620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				147A07672D63B25700F2B620 /* Smart-Attendance-Tracker */,
+			);
+			name = "Smart-Attendance-Tracker";
+			packageProductDependencies = (
+			);
+			productName = "Smart-Attendance-Tracker";
+			productReference = 147A07652D63B25700F2B620 /* Smart-Attendance-Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		147A07742D63B25900F2B620 /* Smart-Attendance-TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147A078C2D63B25900F2B620 /* Build configuration list for PBXNativeTarget "Smart-Attendance-TrackerTests" */;
+			buildPhases = (
+				147A07712D63B25900F2B620 /* Sources */,
+				147A07722D63B25900F2B620 /* Frameworks */,
+				147A07732D63B25900F2B620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147A07772D63B25900F2B620 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				147A07782D63B25900F2B620 /* Smart-Attendance-TrackerTests */,
+			);
+			name = "Smart-Attendance-TrackerTests";
+			packageProductDependencies = (
+			);
+			productName = "Smart-Attendance-TrackerTests";
+			productReference = 147A07752D63B25900F2B620 /* Smart-Attendance-TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		147A077E2D63B25900F2B620 /* Smart-Attendance-TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147A078F2D63B25900F2B620 /* Build configuration list for PBXNativeTarget "Smart-Attendance-TrackerUITests" */;
+			buildPhases = (
+				147A077B2D63B25900F2B620 /* Sources */,
+				147A077C2D63B25900F2B620 /* Frameworks */,
+				147A077D2D63B25900F2B620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147A07812D63B25900F2B620 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				147A07822D63B25900F2B620 /* Smart-Attendance-TrackerUITests */,
+			);
+			name = "Smart-Attendance-TrackerUITests";
+			packageProductDependencies = (
+			);
+			productName = "Smart-Attendance-TrackerUITests";
+			productReference = 147A077F2D63B25900F2B620 /* Smart-Attendance-TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147A075D2D63B25700F2B620 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					147A07642D63B25700F2B620 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					147A07742D63B25900F2B620 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 147A07642D63B25700F2B620;
+					};
+					147A077E2D63B25900F2B620 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 147A07642D63B25700F2B620;
+					};
+				};
+			};
+			buildConfigurationList = 147A07602D63B25700F2B620 /* Build configuration list for PBXProject "Smart-Attendance-Tracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147A075C2D63B25700F2B620;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 147A07662D63B25700F2B620 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147A07642D63B25700F2B620 /* Smart-Attendance-Tracker */,
+				147A07742D63B25900F2B620 /* Smart-Attendance-TrackerTests */,
+				147A077E2D63B25900F2B620 /* Smart-Attendance-TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147A07632D63B25700F2B620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147A07732D63B25900F2B620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147A077D2D63B25900F2B620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147A07612D63B25700F2B620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147A07712D63B25900F2B620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147A077B2D63B25900F2B620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		147A07772D63B25900F2B620 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147A07642D63B25700F2B620 /* Smart-Attendance-Tracker */;
+			targetProxy = 147A07762D63B25900F2B620 /* PBXContainerItemProxy */;
+		};
+		147A07812D63B25900F2B620 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147A07642D63B25700F2B620 /* Smart-Attendance-Tracker */;
+			targetProxy = 147A07802D63B25900F2B620 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		147A07872D63B25900F2B620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		147A07882D63B25900F2B620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		147A078A2D63B25900F2B620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Smart-Attendance-Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Scaler.Smart-Attendance-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		147A078B2D63B25900F2B620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Smart-Attendance-Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Scaler.Smart-Attendance-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		147A078D2D63B25900F2B620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Scaler.Smart-Attendance-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart-Attendance-Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Smart-Attendance-Tracker";
+			};
+			name = Debug;
+		};
+		147A078E2D63B25900F2B620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Scaler.Smart-Attendance-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart-Attendance-Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Smart-Attendance-Tracker";
+			};
+			name = Release;
+		};
+		147A07902D63B25900F2B620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Scaler.Smart-Attendance-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Smart-Attendance-Tracker";
+			};
+			name = Debug;
+		};
+		147A07912D63B25900F2B620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Scaler.Smart-Attendance-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Smart-Attendance-Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147A07602D63B25700F2B620 /* Build configuration list for PBXProject "Smart-Attendance-Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147A07872D63B25900F2B620 /* Debug */,
+				147A07882D63B25900F2B620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147A07892D63B25900F2B620 /* Build configuration list for PBXNativeTarget "Smart-Attendance-Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147A078A2D63B25900F2B620 /* Debug */,
+				147A078B2D63B25900F2B620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147A078C2D63B25900F2B620 /* Build configuration list for PBXNativeTarget "Smart-Attendance-TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147A078D2D63B25900F2B620 /* Debug */,
+				147A078E2D63B25900F2B620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147A078F2D63B25900F2B620 /* Build configuration list for PBXNativeTarget "Smart-Attendance-TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147A07902D63B25900F2B620 /* Debug */,
+				147A07912D63B25900F2B620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 147A075D2D63B25700F2B620 /* Project object */;
+}
