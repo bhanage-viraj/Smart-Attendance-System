@@ -1,16 +1,8 @@
 //
 //  SuccessView.swift
-//  Smart-Attendance-Tracker
-//
-//  Created by Viraj Bhanage on 18/02/25.
+//  Smart-Attendance-Automation
 //
 
-//
-//  SuccessView.swift
-//  Smart-Attendance-Tracker
-//
-//  Created by Viraj Bhanage on 18/02/25.
-//
 
 import SwiftUI
 
@@ -19,9 +11,10 @@ struct SuccessView: View {
 
     var body: some View {
         VStack {
-            // fatatke fodne hai!!
+            // patatke fodne hai!!
             Text("Attendance Marked Successfully!")
                 .font(.title2)
+                .multilineTextAlignment(.center)
                 .padding()
             
             Button("OK") {
