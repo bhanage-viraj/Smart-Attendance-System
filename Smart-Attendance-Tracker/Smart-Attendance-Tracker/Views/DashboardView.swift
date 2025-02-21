@@ -8,21 +8,31 @@
 import SwiftUI
 
 struct DashboardView: View {
+    @State private var showSuccessPopup = false
+
     var body: some View {
-        VStack {
-            Button(action: {
-                print("Attendance Marked")
-            }) {
-                Text("Mark Attendance")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .padding()
+        ZStack {
+            VStack {
+                Button(action: {
+                    showSuccessPopup = true
+                }) {
+                    Text("Mark Attendance")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding()
+                }
+            }
+            .padding()
+
+            // Show Success Popup as an overlay
+            if showSuccessPopup {
+                SuccessView(isPresented: $showSuccessPopup)
+                    .transition(.scale)
             }
         }
-        .padding()
     }
 }
 
