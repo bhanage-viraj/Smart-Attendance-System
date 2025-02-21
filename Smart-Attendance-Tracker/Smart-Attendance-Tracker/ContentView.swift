@@ -22,9 +22,10 @@ struct ContentView: View {
                     .frame(width: 200, height: 150)
                 
                 // Title text from second implementation
-                Text("Smart Attendance \n        Automation")
+                Text("Smart Attendance \n Automation")
                     .font(.title)
                     .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
                     .padding(.top, 5)
             }
             .padding()

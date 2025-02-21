@@ -69,20 +69,20 @@ struct LoginView: View {
                     
                     // Password field
                     VStack(alignment: .leading) {
-                        Text("Roll Number")
+                        Text("Password")
                             .foregroundColor(secondaryTextColor)
                         
                         HStack {
-                            if isSecured {
-                                SecureField("Enter your SST Roll No.", text: $password)
-                                    .textFieldStyle(DefaultTextFieldStyle())
-                                    .foregroundColor(textColor)
-                            } else {
-                                TextField("Enter your SST Roll No.", text: $password)
-                                    .padding()
-                                    .textFieldStyle(DefaultTextFieldStyle())
-                                    .foregroundColor(textColor)
+                            Group {
+                                if isSecured {
+                                    SecureField("Enter your Password", text: $password)
+                                        .textFieldStyle(DefaultTextFieldStyle())
+                                } else {
+                                    TextField("Enter your Password", text: $password)
+                                        .textFieldStyle(DefaultTextFieldStyle())
+                                }
                             }
+                            .foregroundColor(textColor)
                             
                             Button(action: {
                                 isSecured.toggle()
