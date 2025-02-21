@@ -1,8 +1,6 @@
 //
 //  DashboardView.swift
-//  Smart-Attendance-Tracker
-//
-//  Created by Viraj Bhanage on 18/02/25.
+//  Smart-Attendance-Automation
 //
 
 import SwiftUI
@@ -15,7 +13,7 @@ struct DashboardView: View {
         ZStack {
             VStack {
                 // edit code here
-                //  make a dashboard
+                //  integrate dhruv bhaiya attendace dashboard
                 
                 
                 Button(action: {

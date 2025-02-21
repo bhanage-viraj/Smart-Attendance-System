@@ -1,8 +1,6 @@
 //
 //  Smart_Attendance_TrackerApp.swift
-//  Smart-Attendance-Tracker
-//
-//  Created by Viraj Bhanage on 17/02/25.
+//  Smart-Attendance-Automation
 //
 
 import SwiftUI
