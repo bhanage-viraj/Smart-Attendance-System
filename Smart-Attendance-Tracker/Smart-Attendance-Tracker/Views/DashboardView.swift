@@ -11,8 +11,13 @@ struct DashboardView: View {
     @State private var showSuccessPopup = false
 
     var body: some View {
+        
         ZStack {
             VStack {
+                // edit code here
+                //  make a dashboard
+                
+                
                 Button(action: {
                     showSuccessPopup = true
                 }) {
@@ -27,7 +32,7 @@ struct DashboardView: View {
             }
             .padding()
 
-            // Show Success Popup as an overlay
+            
             if showSuccessPopup {
                 SuccessView(isPresented: $showSuccessPopup)
                     .transition(.scale)

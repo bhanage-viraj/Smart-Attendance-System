@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var navigateToLogin = false
     
     var body: some View {
+        // Edit code here 
         VStack {
             if navigateToLogin {
                 LoginView()
