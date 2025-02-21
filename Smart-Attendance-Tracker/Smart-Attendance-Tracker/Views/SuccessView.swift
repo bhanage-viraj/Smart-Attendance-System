@@ -19,6 +19,7 @@ struct SuccessView: View {
 
     var body: some View {
         VStack {
+            // fatatke fodne hai!!
             Text("Attendance Marked Successfully!")
                 .font(.title2)
                 .padding()
