@@ -27,7 +27,7 @@ struct SuccessView: View {
                     .scaleEffect(showStars ? 1 : 0)
                     .opacity(showStars ? 0.8 : 0)
                     .animation(
-                        Animation.easeInOut(duration: 0.5)
+                        Animation.easeInOut(duration: 0)
                             .delay(Double(index) * 0.05),
                         value: showStars
                     )
