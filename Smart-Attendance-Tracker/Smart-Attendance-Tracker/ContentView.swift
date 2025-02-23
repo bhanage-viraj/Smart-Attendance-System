@@ -16,7 +16,7 @@ struct ContentView: View {
         } else {
             VStack {
                 // Logo image from second implementation
-                Image("final-image")
+                Image("scaler-logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 150)
@@ -26,7 +26,7 @@ struct ContentView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                    .padding(.top, 5)
+                    .padding(.top, 0)
             }
             .padding()
             .opacity(opacity)

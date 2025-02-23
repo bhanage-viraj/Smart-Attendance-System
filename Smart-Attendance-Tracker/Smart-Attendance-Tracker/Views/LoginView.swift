@@ -162,13 +162,7 @@ struct LoginView: View {
                     Spacer()
                 }
             }
-            .alert(isPresented: $showAlert) {
-                Alert(
-                    title: Text("Demo Mode"),
-                    message: Text("This is a frontend demo. No actual authentication is performed."),
-                    dismissButton: .default(Text("OK"))
-                )
-            }
+            
             .navigationDestination(isPresented: $isLoggedIn) {
                 DashboardView()
             }
