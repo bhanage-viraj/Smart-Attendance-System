@@ -22,6 +22,22 @@ class AuthService {
         
         
     }
+    
+    func loginWithGoogle(token: String, completion: @escaping (Result<String, Error>) -> Void) {
+           guard let url = URL(string: "\(baseURL)/google") else {
+               completion(.failure(NSError(domain: "", code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
+               return
+           }
+           
+           let body: [String: String] = ["token": token]
+           let request = makeRequest(url: url, body: body)
+           
+           performRequest(request: request, completion: completion)
+       }
+    
+    
+    
+    
     private func makeRequest(url: URL, body: [String: String]) -> URLRequest {
         var request = URLRequest(url:url)
         request.httpMethod="POST"
@@ -30,6 +46,9 @@ class AuthService {
         return request
 
     }
+    
+    
+    
     private func performRequest(request: URLRequest, completion: @escaping (Result<String, Error>) -> Void) {
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {

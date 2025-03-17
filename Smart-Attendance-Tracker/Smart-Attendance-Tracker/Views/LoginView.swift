@@ -1,18 +1,9 @@
-//
-//  LoginView.swift
-//  Smart-Attendance-Automation
-//
-
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var isSecured: Bool = true
-    @State private var showAlert: Bool = false
-    @State private var isLoggedIn: Bool = false
+    @StateObject private var viewModel = LoginViewModel()
     @Environment(\.colorScheme) var colorScheme
-    
+
     var backgroundColor: Color {
         colorScheme == .dark ? Color.black : Color.white
     }
@@ -24,11 +15,10 @@ struct LoginView: View {
     var secondaryTextColor: Color {
         colorScheme == .dark ? Color.gray : Color.gray
     }
-    
+
     var body: some View {
         NavigationStack {
             ZStack {
-                // Background color
                 backgroundColor.edgesIgnoringSafeArea(.all)
                 
                 VStack(spacing: 25) {
@@ -56,7 +46,7 @@ struct LoginView: View {
                         Text("Email")
                             .foregroundColor(secondaryTextColor)
                         
-                        TextField("Enter your SST email", text: $email)
+                        TextField("Enter your SST email", text: $viewModel.email)
                             .textFieldStyle(DefaultTextFieldStyle())
                             .keyboardType(.emailAddress)
                             .autocapitalization(.none)
@@ -74,20 +64,19 @@ struct LoginView: View {
                         
                         HStack {
                             Group {
-                                if isSecured {
-                                    SecureField("Enter your Password", text: $password)
-                                        .textFieldStyle(DefaultTextFieldStyle())
+                                if viewModel.isSecured {
+                                    SecureField("Enter your Password", text: $viewModel.password)
                                 } else {
-                                    TextField("Enter your Password", text: $password)
-                                        .textFieldStyle(DefaultTextFieldStyle())
+                                    TextField("Enter your Password", text: $viewModel.password)
                                 }
                             }
                             .foregroundColor(textColor)
-                            
+                            .textFieldStyle(DefaultTextFieldStyle())
+
                             Button(action: {
-                                isSecured.toggle()
+                                viewModel.isSecured.toggle()
                             }) {
-                                Image(systemName: isSecured ? "eye.slash" : "eye")
+                                Image(systemName: viewModel.isSecured ? "eye.slash" : "eye")
                                     .foregroundColor(secondaryTextColor)
                             }
                         }
@@ -96,50 +85,39 @@ struct LoginView: View {
                         .cornerRadius(10)
                     }
                     .padding(.horizontal)
-                    
+
                     // Forgot password
-                    Button(action: {
-                        // Handle forgot password
-                    }) {
-                        Text("Forgot Password?")
-                            .foregroundColor(.blue)
-                    }
-                    
+                   
                     // Login button
                     Button(action: {
-                        // Handle login
-                        showAlert = true
-                        isLoggedIn = true
+                        viewModel.login()
                     }) {
-                        Text("Sign In")
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
+                        if viewModel.isLoading {
+                            ProgressView()
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                        } else {
+                            Text("Sign In")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .background(Color.blue)
+                                .cornerRadius(10)
+                        }
+                    }
+                    .padding(.horizontal)
+                    
+                    // Display error message if login fails
+                    if let errorMessage = viewModel.errorMessage {
+                        Text(errorMessage)
+                            .foregroundColor(.red)
                             .padding()
-                            .background(Color.blue)
-                            .cornerRadius(10)
                     }
-                    .padding(.horizontal)
-                    
-                    // OR divider
-                    HStack {
-                        Rectangle()
-                            .frame(height: 1)
-                            .foregroundColor(secondaryTextColor.opacity(0.5))
-                        
-                        Text("OR")
-                            .foregroundColor(secondaryTextColor)
-                            .padding(.horizontal)
-                        
-                        Rectangle()
-                            .frame(height: 1)
-                            .foregroundColor(secondaryTextColor.opacity(0.5))
-                    }
-                    .padding(.horizontal)
-                    
-                    // Google Sign In button
+
+                   
                     Button(action: {
-                        // Handle Google sign in
+                       
                     }) {
                         HStack {
                             Image(systemName: "g.circle.fill")
@@ -158,12 +136,11 @@ struct LoginView: View {
                         )
                     }
                     .padding(.horizontal)
-                    
+
                     Spacer()
                 }
             }
-            
-            .navigationDestination(isPresented: $isLoggedIn) {
+            .navigationDestination(isPresented: $viewModel.isLoggedIn) {
                 DashboardView()
             }
         }
@@ -175,3 +152,8 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
+
+
+
+
+

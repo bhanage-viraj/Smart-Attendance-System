@@ -1,3 +1,13 @@
+//
+//  LoginViewModel.swift
+//  Smart-Attendance-Tracker
+//
+//  Created by Viraj Bhanage on 17/03/25.
+//
+
+
+
+
 import SwiftUI
 
 class LoginViewModel: ObservableObject {
@@ -6,6 +16,7 @@ class LoginViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage: String?
     @Published var isLoggedIn: Bool = false
+    @Published var isSecured: Bool = true
     
     func login() {
         guard !email.isEmpty, !password.isEmpty else {
