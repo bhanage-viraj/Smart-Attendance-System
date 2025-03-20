@@ -1,3 +1,8 @@
+//
+//  LoginView.swift
+//  Smart-Attendance-Automation
+//
+
 import SwiftUI
 
 struct LoginView: View {

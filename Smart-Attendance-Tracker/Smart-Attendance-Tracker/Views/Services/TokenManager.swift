@@ -2,9 +2,6 @@
 //  TokenManager.swift
 //  Smart-Attendance-Tracker
 //
-//  Created by Viraj Bhanage on 19/03/25.
-//
-
 
 import Foundation
 import Security
