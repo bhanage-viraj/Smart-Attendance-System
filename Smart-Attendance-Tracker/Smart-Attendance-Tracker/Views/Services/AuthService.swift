@@ -6,6 +6,14 @@
 //
 
 import Foundation
+
+enum AuthError: Error {
+    case invaildCredentials
+    case invalidResponse
+    case invaildURL
+    
+}
+
 class AuthService {
     static let shared = AuthService()
     private let baseURL = "http://3.95.186.173:8080/attendance/auth/login"
@@ -50,6 +58,7 @@ class AuthService {
     
     
     private func performRequest(request: URLRequest, completion: @escaping (Result<String, Error>) -> Void) {
+        // handel status code response
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
                 completion(.failure(error))
