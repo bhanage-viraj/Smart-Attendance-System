@@ -83,22 +83,41 @@ class AuthService {
     }
     // update to handel https satus code
     private func performRequest(request: URLRequest, completion: @escaping (Result<String, Error>) -> Void) {
-        // handel status code response
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-            
-            guard let data = data, let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                  let token = json["token"] as? String else {
-                completion(.failure(NSError(domain: "", code: 500, userInfo: [NSLocalizedDescriptionKey: "Invalid Response"])))
-                return
-            }
-            
-            completion(.success(token))
-        }.resume()
-    }
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                // Handle network errors
+                if let error = error {
+                    completion(.failure(AuthError.networkError(error)))
+                    return
+                }
+                
+                // Handle HTTP status codes
+                if let httpResponse = response as? HTTPURLResponse {
+                    if httpResponse.statusCode != 200 {
+                        completion(.failure(AuthError.invalidResponse))
+                        return
+                    }
+                }
+                
+                // Handle missing data
+                guard let data = data else {
+                    completion(.failure(AuthError.noData))
+                    return
+                }
+                
+                // Parse response
+                do {
+                    guard let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+                          let token = json["token"] as? String else {
+                        completion(.failure(AuthError.decodingError))
+                        return
+                    }
+                    
+                    completion(.success(token))
+                } catch {
+                    completion(.failure(AuthError.decodingError))
+                }
+            }.resume()
+        }
     
 }
 
