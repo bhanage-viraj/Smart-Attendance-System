@@ -11,8 +11,28 @@ struct InstructorView: View {
 
     var body: some View {
         VStack {
+           
+            Text("Welcome to the Instructor Panel")
+                .font(.title2)
+                .bold()
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .foregroundColor(.black)
+                .cornerRadius(10)
+
             Spacer()
 
+            
+            Image("InstructorIcon")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 250, height: 250)
+            
+
+            Spacer()
+
+            
             Button(action: {
                 isAttendanceActive.toggle()
             }) {
@@ -29,6 +49,7 @@ struct InstructorView: View {
 
             Spacer()
         }
+        .padding()
         .navigationTitle("Instructor Panel")
     }
 }
@@ -36,6 +57,7 @@ struct InstructorView: View {
 #Preview {
     InstructorView()
 }
+
 
 
 
